@@ -108,7 +108,7 @@ function generateMarkdown(data) {
   
   // Generate markdown for the top required portions of the README
   let draftMarkdown = 
-  `# ${data.title} https://img.shields.io/github/license/${data.username}/${data.repo}
+  `# ${data.title}
   ${renderLicenseBadge(data.license)}
   
   
@@ -190,10 +190,14 @@ function generateMarkdown(data) {
   
   ## License
   
-  ${data.license}
-  ${renderLicenseLink(data.license)}
-  ${renderLicenseSection(data.license)}
   `;
+  
+  draftMarkdown += 
+  `
+  ${data.license}\n
+  ${renderLicenseLink(data.license)}\n
+  ${renderLicenseSection(data.license)}\n
+  `
   
   
   // Questions / About Developer section
@@ -213,7 +217,10 @@ function generateMarkdown(data) {
   
   draftDev +=
   `
-  Email: ${data.email}
+  Github Username: ${data.username}\n
+  Github Repository: ${data.repo}\n
+  Email: ${data.email}\n
+  Linkedin: ${data.linkedin}\n
   `};
   
   // Add developer section to markdown

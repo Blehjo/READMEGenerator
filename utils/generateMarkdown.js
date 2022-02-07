@@ -24,7 +24,7 @@ function renderLicenseBadge(data) {
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
   if (data === "MIT") {
-      badge = "([![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT))"
+      badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
   } else if (data === "GPL v2") {
       badge = "(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
   } else if (data === "Apache") {

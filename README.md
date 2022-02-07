@@ -57,10 +57,10 @@
   
   Github Username: Blehjo
 
-  Github Repository: github.com/Blehjo/READMEGenerator
+  Github Repository: https://www.github.com/Blehjo/READMEGenerator
 
   Email: blehjooo@gmail.com
 
-  Linkedin: linkedin.com/in/bleh-s-08a6b2148/
+  Linkedin: https://www.linkedin.com/in/bleh-s-08a6b2148/
 
   

@@ -1,0 +1,1 @@
+{"title":"README Generator","description":"Web application.","installation":"npm install","usage":"Check my github for documentation.","contributing":"No contributors.","tests":"npm start","license":"MIT","linkedin":"linkedin.com","github":"github.com"}

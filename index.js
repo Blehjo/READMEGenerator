@@ -62,9 +62,36 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'github',
-        message: 'Enter your github URL.',
-        default: 'github.com'
+        name: 'username',
+        message: 'Enter your github username.',
+        validate: (answer) => {
+          if(answer === '') {
+            return 'please enter a valid email address'
+          }
+          return true
+        } 
+      },
+      {
+        type: 'input',
+        name: 'repo',
+        message: 'Enter your github repo URL.',
+        validate: (answer) => {
+          if(answer === '') {
+            return 'please enter a valid email address'
+          }
+          return true
+        } 
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email address',
+        validate: (answer) => {
+          if(answer === '') {
+            return 'please enter a valid email address'
+          }
+          return true
+        }
       }
 ];
 
@@ -82,7 +109,7 @@ function init() {
   .then(response => {
     var fileName = 'README.md';
     var data = response;
-    writeToFile(fileName, JSON.stringify(data));
+    writeToFile(fileName, data);
   })
 }
 

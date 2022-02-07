@@ -109,14 +109,9 @@ function init() {
   .then(response => {
     var fileName = 'README.md';
     var data = response;
-    writeToFile(fileName, data);
+    writeToFile(fileName, JSON.stringify(generateMarkdown(data)));
   })
 }
 
 // Function call to initialize app
 init();
-
-
-// 09/19 activity & 09/14 activity & 09/20 & 
-
-// const outputCyanText = (text) => console.log(`\x1b[36m${text}\x1b[0m`);

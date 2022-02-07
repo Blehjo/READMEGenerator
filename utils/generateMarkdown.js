@@ -1,19 +1,19 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (data.license === "MIT") {
+function renderLicenseBadge(data) {
+  if (data === "MIT") {
       badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
-  } else if (data.license === "GPL v2") {
+  } else if (data === "GPL v2") {
       badge = "[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)]";
-  } else if (data.license === "Apache") {
+  } else if (data === "Apache") {
       badge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
-  } else if (data.license === "GPL v3") {
+  } else if (data === "GPL v3") {
       badge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
-  } else if (data.license === "BSD 3-clause") {
+  } else if (data === "BSD 3-clause") {
       badge = "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]";
-  } else if (data.license === "LGPL v3") {
+  } else if (data === "LGPL v3") {
       badge = "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)]";
-  } else if (data.license === "AGPL v3") {
+  } else if (data === "AGPL v3") {
       badge = "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)]";
   } else {
       badge = "";
@@ -22,20 +22,20 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (data.license === "MIT") {
+function renderLicenseLink(data) {
+  if (data === "MIT") {
       badge = "(https://opensource.org/licenses/MIT)"
-  } else if (data.license === "GPL v2") {
+  } else if (data === "GPL v2") {
       badge = "(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
-  } else if (data.license === "Apache") {
+  } else if (data === "Apache") {
       badge = "(https://opensource.org/licenses/Apache-2.0)"
-  } else if (data.license === "GPL v3") {
+  } else if (data === "GPL v3") {
       badge = "(https://www.gnu.org/licenses/agpl-3.0)"
-  } else if (data.license === "BSD 3-clause") {
+  } else if (data === "BSD 3-clause") {
       badge = "(https://opensource.org/licenses/BSD-3-Clause)"
-  } else if (data.license === "GNU LGPL v3") {
+  } else if (data === "GNU LGPL v3") {
       badge = "(https://www.gnu.org/licenses/lgpl-3.0)"
-  } else if (data.license === "GNU AGPL v3") {
+  } else if (data === "GNU AGPL v3") {
       badge = "(https://www.gnu.org/licenses/agpl-3.0)"
   } else {
       badge = ""
@@ -44,30 +44,30 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(data) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkDown(data) {
-  // Generate Table of Contents conditionally based on userResponses
+function generateMarkdown(data) {
+  // Generate Table of Contents conditionally based on data
   let tableOfContents = `## Table of Contents`;
   
-  if (userResponses.installation !== '') { tableOfContents += `
+  if (data.installation !== '') { tableOfContents += `
   * [Installation](#installation)` };
   
-  if (userResponses.usage !== '') { tableOfContents += `
+  if (data.usage !== '') { tableOfContents += `
   * [Usage](#usage)` };
   
-  if (userResponses.contributing !== '') { tableOfContents += `
+  if (data.contributing !== '') { tableOfContents += `
   * [Contributing](#contributing)` };
   
-  if (userResponses.tests !== '') { tableOfContents += `
+  if (data.tests !== '') { tableOfContents += `
   * [Tests](#tests)` };
   
   
   // Generate markdown for the top required portions of the README
   let draftMarkdown = 
-  `# ${userResponses.title}
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor)
+  `# ${data.title}
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${data.username}/${data.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.repo}?style=flat&logo=appveyor)
   
   Check out the badges hosted by [shields.io](https://shields.io/).
   
@@ -76,7 +76,7 @@ function generateMarkDown(data) {
   
   *The what, why, and how:* 
   
-  ${userResponses.description}
+  ${data.description}
   `
   
   // Add Table of Contents to markdown
@@ -88,7 +88,7 @@ function generateMarkDown(data) {
   
   
   // Optional Installation section
-  if (userResponses.installation !== '') {
+  if (data.installation !== '') {
   
   draftMarkdown +=
   `
@@ -97,12 +97,12 @@ function generateMarkDown(data) {
   
   *Steps required to install project and how to get the development environment running:*
   
-  ${userResponses.installation}`
+  ${data.installation}`
   };
   
   
   // Optional Usage section
-  if (userResponses.usage !== '') {
+  if (data.usage !== '') {
   
   draftMarkdown +=
   
@@ -112,12 +112,12 @@ function generateMarkDown(data) {
   
   *Instructions and examples for use:*
   
-  ${userResponses.usage}`
+  ${data.usage}`
   };
   
   
   // Optional Contributing section
-  if (userResponses.contributing !== '') {
+  if (data.contributing !== '') {
   
   draftMarkdown +=
       
@@ -127,12 +127,12 @@ function generateMarkDown(data) {
   
   *If you would like to contribute it, you can follow these guidelines for how to do so.*
   
-  ${userResponses.contributing}`
+  ${data.contributing}`
   };
   
   
   // Optional Tests section
-  if (userResponses.tests !== '') {
+  if (data.tests !== '') {
   
   draftMarkdown +=
   `
@@ -141,7 +141,7 @@ function generateMarkDown(data) {
   
   *Tests for application and how to run them:*
   
-  ${userResponses.tests}`
+  ${data.tests}`
   };
   
   
@@ -151,7 +151,9 @@ function generateMarkDown(data) {
   
   ## License
   
-  ${userResponses.license}
+  ${data.license}
+  ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
   `;
   
   
@@ -168,11 +170,11 @@ function generateMarkDown(data) {
   `;
   
   // If GitHub email is not null, add to Developer section
-  if (userResponses.email !== null) {
+  if (data.email !== null) {
   
   draftDev +=
   `
-  Email: ${userResponses.email}
+  Email: ${data.email}
   `};
   
   // Add developer section to markdown

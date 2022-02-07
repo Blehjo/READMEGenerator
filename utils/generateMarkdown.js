@@ -2,7 +2,8 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
   if (data === "MIT") {
-      "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+      badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+      return badge;
   } else if (data === "GPL v2") {
       badge = "[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)]";
   } else if (data === "Apache") {
@@ -25,6 +26,7 @@ function renderLicenseBadge(data) {
 function renderLicenseLink(data) {
   if (data === "MIT") {
       badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+      return badge;
   } else if (data === "GPL v2") {
       badge = "(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
   } else if (data === "Apache") {
@@ -39,7 +41,7 @@ function renderLicenseLink(data) {
       badge = "(https://www.gnu.org/licenses/agpl-3.0)"
   } else {
       badge = ""
-  }
+  } 
 }
 
 // TODO: Create a function that returns the license section of README

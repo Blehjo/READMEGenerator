@@ -15,6 +15,12 @@
   
   ## Installation
   
+  
+
+https://user-images.githubusercontent.com/89440573/152885199-64fb6234-2298-453f-adcc-aa3b5ebaa31e.mp4
+
+
+  
   *Steps required to install project and how to get the development environment running:*
   
   In order to run this program, you have to clone the repository from github and run npm install in the terminal. Once that is done then you have to run node index.js and fill out the questions. The rest will be done by the application.

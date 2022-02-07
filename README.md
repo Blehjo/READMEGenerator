@@ -1,5 +1,5 @@
 # README Generator
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/Blehjo/github.com?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Blehjo/github.com?style=flat&logo=appveyor)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
   
   ## Description 
@@ -40,7 +40,6 @@
   ## License
   
   MIT
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ---
@@ -51,5 +50,5 @@
   For any questions, please contact me with the information below:
   
   
-  Email: blehjo
+  Email: blehjooo@gmail.com
   

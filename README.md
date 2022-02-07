@@ -1,5 +1,5 @@
 # README Generator
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   
   ## Description 
@@ -50,5 +50,5 @@
   For any questions, please contact me with the information below:
   
   
-  Email: blehjooo@gmail.com
+  Email: blehjo
   

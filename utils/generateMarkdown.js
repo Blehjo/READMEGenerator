@@ -24,11 +24,11 @@ function renderLicenseBadge(data) {
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
   if (data === "MIT") {
-      badge = "(https://opensource.org/licenses/MIT)"
+      badge = "([![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT))"
   } else if (data === "GPL v2") {
       badge = "(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
   } else if (data === "Apache") {
-      badge = "(https://opensource.org/licenses/Apache-2.0)"
+      badge = "([![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0))"
   } else if (data === "GPL v3") {
       badge = "(https://www.gnu.org/licenses/agpl-3.0)"
   } else if (data === "BSD 3-clause") {

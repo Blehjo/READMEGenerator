@@ -109,7 +109,7 @@ function init() {
   .then(response => {
     var fileName = 'README.md';
     var data = response;
-    writeToFile(fileName, JSON.stringify(generateMarkdown(data)));
+    writeToFile(fileName, generateMarkdown(data));
   })
 }
 

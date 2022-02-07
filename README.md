@@ -1,1 +1,58 @@
-"# README Generator\n  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/blehjo/github.com/Blehjo/READMEGenerator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/blehjo/github.com/Blehjo/READMEGenerator?style=flat&logo=appveyor)\n  \n  Check out the badges hosted by [shields.io](https://shields.io/).\n  \n  \n  ## Description \n  \n  *The what, why, and how:* \n  \n  Web application.\n  ## Table of Contents\n  * [Installation](#installation)\n  * [Usage](#usage)\n  * [Contributing](#contributing)\n  * [Tests](#tests)\n  * [License](#license)\n  \n  ## Installation\n  \n  *Steps required to install project and how to get the development environment running:*\n  \n  npm install\n  \n  ## Usage \n  \n  *Instructions and examples for use:*\n  \n  Check my github for documentation.\n  \n  ## Contributing\n  \n  *If you would like to contribute it, you can follow these guidelines for how to do so.*\n  \n  No contributors.\n  \n  ## Tests\n  \n  *Tests for application and how to run them:*\n  \n  npm start\n  \n  ## License\n  \n  MIT\n  undefined\n  undefined\n  \n  ---\n  \n  ## Questions?\n  \n  \n  For any questions, please contact me with the information below:\n  \n  \n  Email: blehjooo@gmail.com\n  "
+# README Generator
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/blehjo/github.com/Blehjo/READMEGenerator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/blehjo/github.com/Blehjo/READMEGenerator?style=flat&logo=appveyor)
+  
+  Check out the badges hosted by [shields.io](https://shields.io/).
+  
+  
+  ## Description 
+  
+  *The what, why, and how:* 
+  
+  Web application.
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [License](#license)
+  
+  ## Installation
+  
+  *Steps required to install project and how to get the development environment running:*
+  
+  npm install
+  
+  ## Usage 
+  
+  *Instructions and examples for use:*
+  
+  Check my github for documentation.
+  
+  ## Contributing
+  
+  *If you would like to contribute it, you can follow these guidelines for how to do so.*
+  
+  No contributors.
+  
+  ## Tests
+  
+  *Tests for application and how to run them:*
+  
+  npm start
+  
+  ## License
+  
+  MIT
+  undefined
+  undefined
+  
+  ---
+  
+  ## Questions?
+  
+  
+  For any questions, please contact me with the information below:
+  
+  
+  Email: blehjooo@gmail.com
+  

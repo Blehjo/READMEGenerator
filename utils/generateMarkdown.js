@@ -24,7 +24,7 @@ function renderLicenseBadge(data) {
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
   if (data === "MIT") {
-      badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+      badge = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)"
   } else if (data === "GPL v2") {
       badge = "(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
   } else if (data === "Apache") {
@@ -69,12 +69,9 @@ function generateMarkdown(data) {
   `# ${data.title}
   ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${data.username}/${data.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.repo}?style=flat&logo=appveyor)
   
-  Check out the badges hosted by [shields.io](https://shields.io/).
-  
   
   ## Description 
   
-  *The what, why, and how:* 
   
   ${data.description}
   `
